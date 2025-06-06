@@ -23,7 +23,7 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           context: .
-          file: docker/Dockerfile.websocket
+          file: docker/Dockerfile.ws
           push: true
           tags: ${{ secrets.DOCKERHUB_USERNAME }}/websocket:${{github.sha}}
       
